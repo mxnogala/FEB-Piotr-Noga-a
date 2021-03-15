@@ -9,7 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2",
     "@popperjs/core": "^2.9.0",
+    "@splidejs/splide": "^2.4.21",
     "bootstrap": "^5.0.0-beta2"
   }
 }

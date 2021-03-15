@@ -11333,10 +11333,11 @@ fieldset:disabled .btn {
 body {
   background-color: #383f45;
   color: #f8f9fa;
+  font-size: 2rem;
 }
 
 section {
-  height: 70vh;
+  min-height: 100vh;
 }
 
 footer {
@@ -11345,37 +11346,181 @@ footer {
 
 .heroImage {
   position: relative;
-  background-Color: rgba(0, 0, 0, 0.5);
   color: white;
-  height: 80vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0 50px;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../images/hero.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .heroImage .heroImage__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
 }
 
-.heroImage .heroImage__img {
-  position: absolute;
-  background-image: url("../images/hero.jpg");
-  background-size: cover;
-  background-position: center;
-  color: white;
-  left: 0;
+.navbar-custom {
   top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+  width: 100vw;
+  max-height: 25vh;
+  position: fixed;
+  z-index: 1;
+  font-size: 2rem;
+  background-color: transparent;
+  padding: 30px 5vw;
+  margin-right: 5vw;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.navbar-custom__logo {
+  max-height: 20vh;
+}
+
+.navbar-custom-scroll {
+  background-color: #212529;
+  max-height: 11vh;
+  padding-top: .25vh;
+  padding-bottom: .25vh;
+  font-size: 1.2rem;
+}
+
+.navbar-custom-scroll__logo {
+  max-height: 10.5vh;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+@-webkit-keyframes brighten {
+  from {
+    -webkit-filter: brightness(50%);
+            filter: brightness(50%);
+  }
+  to {
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
+  }
+}
+
+@keyframes brighten {
+  from {
+    -webkit-filter: brightness(50%);
+            filter: brightness(50%);
+  }
+  to {
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
+  }
+}
+
+.splide__img:hover {
+  animation: brighten .2s forwards linear alternate-reverse;
+}
+
+.references__btn {
+  background-color: transparent;
+  color: #f8f9fa;
+  cursor: pointer;
+  border: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.references__content {
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s ease-out;
+  transition: max-height 0.3s ease-out;
+  height: auto;
+  max-height: 0px;
+}
+
+.references__content-active {
+  overflow: hidden;
+  -webkit-transition: max-height 1s ease-out;
+  transition: max-height 1s ease-out;
+  height: auto;
+  max-height: 200vh;
+}
+
+@-webkit-keyframes slideDown {
+  from {
+    opacity: 0;
+    height: 0;
+    padding: 0;
+  }
+  to {
+    opacity: 1;
+    height: 400px;
+    padding: 20px;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    height: 0;
+    padding: 0;
+  }
+  to {
+    opacity: 1;
+    height: 400px;
+    padding: 20px;
+  }
+}
+
+@-webkit-keyframes showImage {
+  from {
+    opacity: 0;
+    -webkit-clip-path: inset(50% 0 50% 0);
+            clip-path: inset(50% 0 50% 0);
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+  }
+  to {
+    opacity: 1;
+    -webkit-clip-path: inset(0 0 0 0);
+            clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes showImage {
+  from {
+    opacity: 0;
+    -webkit-clip-path: inset(50% 0 50% 0);
+            clip-path: inset(50% 0 50% 0);
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+  }
+  to {
+    opacity: 1;
+    -webkit-clip-path: inset(0 0 0 0);
+            clip-path: inset(0 0 0 0);
+  }
+}
+
+@-webkit-keyframes showContent {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes showContent {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */
