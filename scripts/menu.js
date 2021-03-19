@@ -1,17 +1,15 @@
-const wrapper = document.querySelector(".navbar-custom");
-const brandImg = document.querySelector(".navbar-custom__logo");
+const navbar = document.querySelector(".navbar-custom");
+const logo = document.querySelector(".navbar-custom__logo");
 
 window.addEventListener("scroll", () => {
     if (window.pageYOffset >= 100) {
-        wrapper.classList.add("navbar-custom-scroll");
-        brandImg.classList.add('navbar-custom-scroll__logo');
-        console.log('scroll');
-        wrapper.style.height = "50%";
+        navbar.classList.add("navbar-custom-scroll");
+        logo.classList.add("navbar-custom-scroll__logo");
+        navbar.style.height = "50%";
 
     }
-    // else if (window.pageYOffset < 100) {
-    //     wrapper.classList.remove("scrollMenu");
-    //     wrapper.style.height = "16%";
-    //     brandImg.style = "";
-    // }
+    else if (window.pageYOffset < 100) {
+        navbar.classList.remove("navbar-custom-scroll");
+        logo.classList.remove("navbar-custom-scroll__logo")
+    }
 });

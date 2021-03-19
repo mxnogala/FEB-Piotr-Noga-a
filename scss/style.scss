@@ -1,20 +1,32 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss"; 
-$bodyBg: lighten($dark, 10%); 
-$sectionBg: lighten($bodyBg, 10%);
-
+@import "../scss/variables"; 
+@import "../scss/navbar";
+@import "../scss/scroll";
 
 body {
     background-color: $bodyBg;
     color: $light;
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 
 section {
-    min-height: 100vh; 
+    // min-height: 100vh; 
+    padding-top: 30px;
+    padding-bottom: 30px;    
+}
+
+@keyframes showSection{
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 footer {
     background-color: $dark;
+    min-height: 30vh;
 }
 
 .heroImage {
@@ -36,50 +48,6 @@ footer {
     }
 }
 
-.navbar-custom {
-  top: 0;
-  width:100vw;
-  max-height: 25vh;
-  position: fixed;
-  z-index: 1;
-  font-size: 2rem;
-  background-color: transparent;
-  padding: 30px 5vw;
-  margin-right:5vw;
-  transition: all .3s linear;
-
-
-  &__logo {
-    max-height: 20vh;
-  }
-  
-}
-
-.navbar-custom-scroll {
-  background-color: $dark;
-  max-height: 11vh;
-  padding-top: .25vh;
-  padding-bottom: .25vh;
-  font-size: 1.2rem;
-
-  &__logo {
-    max-height: 10.5vh;
-  }
-}
-
-// @keyframes menuBackground {
-//   from {
-//     // background-color: transparent;
-//     // height: 100%;
-//   }
-//   to {
-//     background-color: $dark;
-//     transform: scaleY(0.9);
-// }
-// }
-.nav-item {
-  margin-left: 20px;
-}
 
 .splide__img {
     
@@ -118,6 +86,13 @@ footer {
   transition: max-height 1s ease-out;
   height: auto;
   max-height: 200vh;
+}
+
+.sectionHeader {
+  border-bottom: 1px solid;
+  border-image-slice: 1;
+  border-image-source: $gradient;
+  margin: 15px;
 }
 
 // .references__content:active {

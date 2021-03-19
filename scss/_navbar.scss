@@ -1,0 +1,47 @@
+.navbar-custom {
+    top: 0;
+    width:100vw;
+    max-height: 22vh;
+    position: fixed;
+    z-index: 1;
+    font-size: 1.7rem;
+    background-color: transparent;
+    padding-top: .5vw;
+    padding-bottom: .5vw;
+    padding: 0 1vw;
+    transition: all .3s linear;
+  
+  
+    &__logo {
+      max-height: 19vh;
+      margin-right: 2vw;
+    }
+    
+  }
+  
+  
+  .navbar-custom-scroll {
+    background-color: $dark;
+    max-height: 11vh;
+    padding-top: .25vh;
+    padding-bottom: .25vh;
+    font-size: 1.2rem;
+    box-shadow: 0px 2px 10px darken($dark, 10%);
+  
+    &__logo {
+      max-height: 10vh;
+    }
+  }
+  
+  .nav-item {
+    margin-left: 20px;
+  }
+  
+  .active-custom {
+    // border-bottom: $blue 2px solid;
+  //  ? ?border-image-source: linear-gradient(to left, #00C853, #B2FF59);
+  border-bottom: 2px solid;
+  border-image-slice: 1;
+  border-image-source: $gradient;
+  }
+  

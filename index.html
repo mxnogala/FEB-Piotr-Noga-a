@@ -21,7 +21,7 @@
     <div class="heroImage">
         <!--  -->
         <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
-            <div class="container-fluid">
+            <div class="container">
                 <a class="navbar-brand" href="#"><img src="./images/logo-white-text.png" alt=""
                         class="img-fluid navbar-custom__logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -31,9 +31,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="#">Features</a>
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="#about" id="about-link">Kim jesteśmy?</a>
+                        <a class="nav-link" href="#accomplished" id="accomplished-link">Nasze realizacje</a>
+                        <a class="nav-link" href="#company" id="company-link">O firmie</a>
+                        <a class="nav-link" href="#contact" id="contact-link">Kontakt</a>
                     </div>
                 </div>
             </div>
@@ -47,24 +48,32 @@
 
     <div class="container-fluid">
         <main>
-            <section id="about">
-                <div class="row">
-                    <h1>O firmie</h1>
-                </div>
-                <div class="row">
-                    <p>Jesteśmy firmą rodzinną z wieloletnim doświadczeniem, specjalizującą się w wykonywaniu szeroko
+            <section id="about-link-section" class="fade-in">
+                <div class="container">
+                    <div class="row">
+                        <h1 class="sectionHeader">O firmie</h1>
+                    </div>
+                    <p>Jesteśmy firmą rodzinną z wieloletnim doświadczeniem, specjalizującą się w wykonywaniu
+                        szeroko
                         pojętych instalacji elektrycznych.
-                        Dysponując wykwalifikowaną kadrą elektromonterów, a także profesjonalnym sprzętem i renomowanymi
+                    </p>
+                    <p>
+                        Dysponując wykwalifikowaną kadrą elektromonterów, a także profesjonalnym sprzętem i
+                        renomowanymi
                         materiałami - gwarantujemy wykonawstwo robót na wysokim poziomie.
+                    </p>
+                    <p>
                         Jeśli oczekujecie Państwo solidnej, ekonomicznej i funkcjonalnej instalacji elektrycznej
                         zapraszamy do współpracy i do zapoznania się z naszą ofertą.
                     </p>
                 </div>
             </section>
 
-            <section class="gallery">
-                <div class="row">
-                    <h1>Nasze realizacje</h1>
+            <section id="accomplished-link-section" class="fade-in">
+                <div class="container">
+                    <div class="row">
+                        <h1 class="sectionHeader">Nasze realizacje</h1>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="splide">
@@ -87,7 +96,7 @@
                     </div>
                 </div>
 
-                <section class="references">
+                <section class="references fade-in">
                     <div class="row">
                         <button class="references__btn">Referencje</button>
                     </div>
@@ -110,18 +119,35 @@
                         </div>
                     </div>
                 </section>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illo. Repellendus quisquam magni
-                    odit ad officiis sed ipsam error, fuga quibusdam nemo quidem a quod sint nihil minima delectus
-                    mollitia?
-                </p>
+            </section>
+            <section id="company-link-section" class="fade-in">
+                <div class="container">
+                    <div class="row">
+                        <h1 class="sectionHeader">O firmie</h1>
+                    </div>
+                    <p>Jesteśmy firmą rodzinną z wieloletnim doświadczeniem, specjalizującą się w wykonywaniu
+                        szeroko
+                        pojętych instalacji elektrycznych.
+                    </p>
+                    <p>
+                        Dysponując wykwalifikowaną kadrą elektromonterów, a także profesjonalnym sprzętem i
+                        renomowanymi
+                        materiałami - gwarantujemy wykonawstwo robót na wysokim poziomie.
+                    </p>
+                    <p>
+                        Jeśli oczekujecie Państwo solidnej, ekonomicznej i funkcjonalnej instalacji elektrycznej
+                        zapraszamy do współpracy i do zapoznania się z naszą ofertą.
+                    </p>
+                </div>
             </section>
 
 
 
-            <section id="contact">
-                <div class="row">
-                    <h1>Kontakt</h1>
+            <section id="contact-link-section">
+                <div class="container">
+                    <div class="row">
+                        <h1 class="sectionHeader">Kontakt</h1>
+                    </div>
                 </div>
             </section>
         </main>
@@ -137,6 +163,8 @@
         crossorigin="anonymous"></script>
     <script src="./scripts/splide.js"></script>
     <script src="./scripts/references.js"></script>
+    <script src="./scripts/scroll.js"></script>
+    <script src="./scripts/fadeElements.js"></script>
     <script src="./scripts/menu.js"></script>
     <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
 </body>
