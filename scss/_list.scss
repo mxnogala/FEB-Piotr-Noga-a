@@ -1,0 +1,25 @@
+.offer-list {
+    display:table; 
+    font-size: 1rem;
+    border-spacing: 0px 20px;
+    text-align: justify;
+
+    &__item {
+        list-style: none;
+        display: table-row;
+
+        &:before {
+            font-family: "Font Awesome 5 Free"; 
+            font-weight: 700;
+            font-size: medium; 
+            content: "\f0e7"; 
+            display: table-cell; 
+            text-align: right;
+            padding-right: 15px;
+        }
+    }
+}
+.offer__header {
+    font-size: 1.5rem;
+    text-align: justify;
+}

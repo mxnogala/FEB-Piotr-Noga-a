@@ -1,0 +1,38 @@
+.references {
+    color: $white;
+    border: none;
+    
+    &__btn {
+        position: relative;
+        &:hover {
+            color: darken($white, 20%);
+            }
+    }
+    
+
+    &__content {
+        overflow: hidden; 
+        transition: max-height 0.3s ease-out;
+        height: auto;
+        max-height: 0px;
+
+        &-active {
+            overflow: hidden; 
+            transition: max-height 1s ease-out;
+            height: auto;
+            max-height: 200vh;
+        }
+    }
+
+    &__arrow {
+        transition: transform .25s;
+        font-size: 2rem;
+        margin-left: 15px;
+
+        &-up {
+            transform:rotate(-180deg);
+        }
+    }
+
+}
+

@@ -10,16 +10,14 @@
     padding-bottom: .5vw;
     padding: 0 1vw;
     transition: all .3s linear;
-  
+    z-index:5;
   
     &__logo {
       max-height: 19vh;
       margin-right: 2vw;
     }
     
-  }
-  
-  
+  }  
   .navbar-custom-scroll {
     background-color: $dark;
     max-height: 11vh;
@@ -38,8 +36,6 @@
   }
   
   .active-custom {
-    // border-bottom: $blue 2px solid;
-  //  ? ?border-image-source: linear-gradient(to left, #00C853, #B2FF59);
   border-bottom: 2px solid;
   border-image-slice: 1;
   border-image-source: $gradient;

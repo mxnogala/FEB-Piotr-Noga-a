@@ -1,4 +1,0 @@
-1. Podświetlanie aktywnych sekcji w nawigacji
-2. Przechodzenie do odpowiednich sekcji z nawigacji
-3. "Rozszerzany" navbar do góry
-4. Animacja pisania na hero image

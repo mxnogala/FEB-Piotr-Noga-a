@@ -12,13 +12,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
             links.forEach(l => {
                 if (l.id != link.id) {
-                    if (l.classList.contains('active') || l.classList.contains('active-custom')) {
-                        l.classList.remove('active');
-                        l.classList.remove('active-custom');
+                    if (l.classList.contains('active') || l.classList.contains('active-underline')) {
+                        l.classList.remove('active-underline');
+                        l.classList.add('underline');
                     }
                 }
             })
-            link.classList.add('active', 'active-custom');
+            link.classList.add('active-underline');
+            link.classList.remove('underline');
 
             console.log(section);
             let nav = "";

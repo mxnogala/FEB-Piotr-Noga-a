@@ -1,146 +1,61 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss"; 
 @import "../scss/variables"; 
+@import "../scss/general";
+@import "../scss/heroImage"; 
 @import "../scss/navbar";
 @import "../scss/scroll";
-
-body {
-    background-color: $bodyBg;
-    color: $light;
-    font-size: 1.2rem;
-}
-
-section {
-    // min-height: 100vh; 
-    padding-top: 30px;
-    padding-bottom: 30px;    
-}
-
-@keyframes showSection{
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-footer {
-    background-color: $dark;
-    min-height: 30vh;
-}
-
-.heroImage {
-    position: relative;
-    color:white;
-    height:100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/hero.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    .heroImage__container {
-        text-align: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-    }
-}
+@import "../scss/list"; 
+@import "../scss/references";
 
 
-.splide__img {
-    
-}
 
-@keyframes brighten {
-    from{
-        filter: brightness(50%); 
-    }
-    to {
-        filter: brightness(1); 
-    }
-}
+
+
 
 .splide__img:hover {
     animation: brighten .2s forwards linear alternate-reverse; 
 }
-
-.references__btn {
-    background-color: transparent;
-    color: $light;
-    cursor: pointer;
-    border: none;
-    transition: 1s;
-}
-
-.references__content {
-    overflow: hidden; 
-    transition: max-height 0.3s ease-out;
-    height: auto;
-    max-height: 0px;
-}
-
-.references__content-active {
-  overflow: hidden; 
-  transition: max-height 1s ease-out;
-  height: auto;
-  max-height: 200vh;
-}
-
-.sectionHeader {
-  border-bottom: 1px solid;
-  border-image-slice: 1;
-  border-image-source: $gradient;
-  margin: 15px;
-}
-
-// .references__content:active {
-//     // display: none;
-//     overflow: hidden;
-//     animation: slideDown .5s linear forwards;
-// }
-
-// .references__contentactive {
-//     display: block; 
-//     transition: all 1s ease-in-out;
-// }
-
-
-  
-  @keyframes slideDown {
-    from {
-      opacity: 0;
-      height: 0;
-      padding: 0;
-    }
-  
-    to {
-      opacity: 1;
-      height: 400px;
-      padding: 20px;
-    }
+.underline {
+  margin-left: 1px;
+  margin-right: 1px;
+  transform: translateZ(0);
+  position: relative;
+  &:before {
+    overflow:hidden;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 100%;
+    bottom: 0px;
+    background: $gradient;
+    height: 2px;
+    transition-property: right;
+    transition: right 0.2s ease-out;
   }
-  
-  @keyframes showImage {
-    from {
-      opacity: 0;
-      clip-path: inset(50% 0 50% 0);
-      transform: scale(0.4);
-    }
-  
-    to {
-      opacity: 1;
-      clip-path: inset(0 0 0 0);
-    }
+  &:hover:before {
+    right: 0;
   }
-  
-  @keyframes showContent {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+
+}
+
+.active-underline {
+  // border-bottom: 2px solid;
+  // border-image-slice: 1;
+  // border-image-source: $gradient;
+ 
+    &:after {
+      position: absolute;
+      height: 3px;
+      margin: 0 auto;
+      content: '';
+      left: 0;
+      right: 0;
+      width: 100%;
+      color: #000;
+      background: $gradient;
+      left: 0;
+      bottom: -3px; /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
   }
+
   
+}
