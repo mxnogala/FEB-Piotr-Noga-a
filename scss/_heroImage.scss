@@ -2,7 +2,7 @@
     position: relative;
     color:white;
     height:100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/hero.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/hero.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,4 +26,20 @@
         color: $gray;
         
       }
+
+      &__header {
+          &::after {
+              content: " |";
+              animation: cursor .3s infinite alternate;
+          }
+      }
+}
+
+@keyframes cursor {
+    0%, 30% {
+        opacity: 0;
+    }
+    70%, 100% {
+        opacity: 1;
+    }
 }

@@ -21,7 +21,7 @@
     <div class="heroImage">
         <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="./images/logo-white-text.png" alt=""
+                <a class="navbar-brand" href="#"><img src="./assets/logo-white-text.png" alt=""
                         class="img-fluid navbar-custom__logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -41,9 +41,9 @@
         </nav>
 
         <div class="container-fluid heroImage__container">
-            <h1 class="display-4">Zapoznaj się z naszą ofertą</h1>
+            <h1 class="heroImage__header display-4"></h1>
         </div>
-        <a href="#about"><i class="fas fa-chevron-down heroImage__arrow fade-in"></i></a>
+        <a href="#about"><i class="fas fa-chevron-down heroImage__arrow fade-in-arrow"></i></a>
     </div>
 
     <div class="container-fluid">
@@ -136,22 +136,22 @@
                     <div class="splide">
                         <div class="splide__track">
                             <ul class="splide__list">
-                                <li class="splide__slide"><img id="img-1" src="./images/first.jpg" alt=""
+                                <li class="splide__slide"><img id="img-1" src="./assets/first.jpg" alt=""
                                         class="img-fluid splide__img">
                                 </li>
-                                <li class="splide__slide"><img id="img-2" src="./images/second.jpg" alt=""
+                                <li class="splide__slide"><img id="img-2" src="./assets/second.jpg" alt=""
                                         class="img-fluid splide__img">
                                 </li>
-                                <li class="splide__slide"><img id="img-3" src="./images/third.jpg" alt=""
+                                <li class="splide__slide"><img id="img-3" src="./assets/third.jpg" alt=""
                                         class="img-fluid splide__img">
                                 </li>
-                                <li class="splide__slide"><img id="img-4" src="./images/fourth.jpg" alt=""
+                                <li class="splide__slide"><img id="img-4" src="./assets/fourth.jpg" alt=""
                                         class="img-fluid splide__img">
                                 </li>
-                                <li class="splide__slide"><img id="img-5" src="./images/fifth.jpg" alt=""
+                                <li class="splide__slide"><img id="img-5" src="./assets/fifth.jpg" alt=""
                                         class="img-fluid splide__img">
                                 </li>
-                                <li class="splide__slide"><img id="img-6" src="./images/sixth.jpg" alt=""
+                                <li class="splide__slide"><img id="img-6" src="./assets/sixth.jpg" alt=""
                                         class="img-fluid splide__img">
                                 </li>
 
@@ -178,17 +178,45 @@
                         <div class="references__content">
                             <div class="row d-flex justify-content-around">
                                 <div class="col-3">
-                                    <img src="./images/kpn.jpeg" alt="" class="img-fluid">
+                                    <div class="references__img">
+                                        <img src="./assets/ref_01.jpeg" alt=""
+                                            class="img-fluid splide__img references__img">
+                                    </div>
                                 </div>
                                 <div class="col-3">
-                                    <img src="./images/kpn.jpeg" alt="" class="img-fluid">
+                                    <div class="references__img">
+                                        <img src="./assets/ref_02.jpg" alt=""
+                                            class="img-fluid splide__img references__img">
+                                    </div>
                                 </div>
                                 <div class="col-3">
-                                    <img src="./images/kpn.jpeg" alt="" class="img-fluid">
+                                    <div class="references__img">
+                                        <img src="./assets/ref_03.jpg" alt=""
+                                            class="img-fluid splide__img references__img">
+                                    </div>
                                 </div>
                                 <div class="col-3">
-                                    <img src="./images/kpn.jpeg" alt="" class="img-fluid">
+                                    <div class="references__img">
+                                        <img src="./assets/ref_04.jpg" alt=""
+                                            class="img-fluid splide__img references__img">
+
+                                    </div>
                                 </div>
+                                <div class="col-3">
+                                    <div class="references__img">
+                                        <img src="./assets/ref_05.jpg" alt=""
+                                            class="img-fluid splide__img references__img">
+
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="references__img">
+                                        <img src="./assets/ref_06.jpg" alt=""
+                                            class="img-fluid splide__img references__img">
+
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -252,6 +280,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <script src="./scripts/splide.js"></script>
+    <script src="./scripts/typing.js"></script>
     <script src="./scripts/gallery.js"></script>
     <script src="./scripts/references.js"></script>
     <script src="./scripts/scroll.js"></script>

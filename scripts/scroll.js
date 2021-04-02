@@ -1,3 +1,6 @@
+const links = [...document.querySelectorAll('.nav-link')];
+const chevron = document.querySelector(".heroImage__arrow");
+
 const isLinkActive = (links, link) => {
 
     links.forEach(l => {
@@ -27,6 +30,7 @@ const getOffset = (section) => {
 
 const scrollTo = (section) => {
 
+    window.removeEventListener("scroll", activeWhileScrolling);
     let offset = getOffset(section);
     console.log(offset);
     window.scroll({
@@ -36,34 +40,51 @@ const scrollTo = (section) => {
     })
 }
 
+const isFinished = () => {
+    console.log('ok');
+    window.addEventListener("scroll", activeWhileScrolling);
+}
+
+const chevronScroll = (e) => {
+    e.preventDefault();
+    if (window.pageYOffset == 0) {
+        chevron.classList.add("appear")
+    }
+
+    if (window.pageYOffset > 100) {
+        chevron.classList.remove("appear");
+    }
+
+}
 
 document.addEventListener("DOMContentLoaded", () => {
-    const links = [...document.querySelectorAll('.nav-link')];
-    const arrow = document.querySelector(".heroImage__arrow");
+
+
     const sections = [...document.querySelectorAll("scrollToSection")];
+    chevron.classList.add("appear");
 
     window.addEventListener("scroll", activeWhileScrolling);
+
+    window.addEventListener("scroll", chevronScroll);
+    chevron.addEventListener("click", () => {
+        chevron.classList.remove("appear");
+    })
 
     links.forEach(link => {
         // isClick = false;
 
         link.addEventListener('click', (e) => {
-
-            // e.preventDefault();
-            // window.removeEventListener("scroll", activeWhileScrolling);
-
             const section = document.querySelector(`#${link.id}-section`);
             isLinkActive(links, link);
             scrollTo(section);
-            // window.addEventListener("scroll", activeWhileScrolling);
-            // isClick = false;
-
-            // e
+            window.setTimeout(function () {
+                window.addEventListener("scroll", activeWhileScrolling);
+            }, 1000);
         })
 
     });
 
-    arrow.addEventListener('click', (e) => {
+    chevron.addEventListener('click', (e) => {
 
         const aboutSection = document.querySelector("#about-link-section");
         const aboutLink = document.querySelector("#about-link");
@@ -75,31 +96,26 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 
 const activeWhileScrolling = (e) => {
-    // e.stopPropagation();
     let navs = document.querySelectorAll(".nav-link");
-    let sects = document.querySelectorAll(".scrollToSection");
-    let lastId;
-    let cur = [];
     const links = [...document.querySelectorAll('.nav-link')];
-
+    const heroImage = document.querySelector("#about-link-section");
+    console.log(getOffset(heroImage));
+    console.log(window.pageYOffset);
+    if (pageYOffset < getOffset(heroImage)) {
+        links.forEach(link => {
+            link.classList.remove('active-underline');
+        })
+    }
 
 
     let fromTop = window.scrollY;
-    navs.forEach(lin => {
-        let section = document.querySelector(`.${lin.id}`);
+    navs.forEach(link => {
+        let section = document.querySelector(`.${link.id}`);
         let offset = getOffset(section)
-        // let off = section.offsetTop;
-        // let nav = document.querySelector(".navbar");
-        // console.log("From top" + fromTop);
-        // console.log(section.getBoundingClientRect().top + nav.offsetHeight);
-
-        if (
-            fromTop >= offset - 10
-        ) {
-            isLinkActive(links, lin);
+        if (fromTop >= offset - 50) {
+            isLinkActive(links, link);
         }
     })
 }
-
 
 
