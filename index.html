@@ -43,12 +43,12 @@
         <div class="container-fluid heroImage__container">
             <h1 class="display-4">Zapoznaj się z naszą ofertą</h1>
         </div>
-        <a href="#about"><i class="fas fa-chevron-down heroImage__arrow"></i></a>
+        <a href="#about"><i class="fas fa-chevron-down heroImage__arrow fade-in"></i></a>
     </div>
 
     <div class="container-fluid">
         <main>
-            <section id="about-link-section" class="fade-in">
+            <section id="about-link-section" class="scrollToSection about-link fade-in">
                 <div class="container">
                     <div class="row">
                         <h1 class="sectionHeader">O firmie</h1>
@@ -70,7 +70,7 @@
                 </div>
             </section>
 
-            <section id="offer-link-section" class="fade-in">
+            <section id="offer-link-section" class="scrollToSection offer-link fade-in">
                 <div class="container offer">
                     <div class="row">
                         <h1 class="sectionHeader">Oferta</h1>
@@ -126,7 +126,7 @@
                 </div>
             </section>
 
-            <section id="accomplished-link-section" class="fade-in">
+            <section id="accomplished-link-section" class="scrollToSection accomplished-link fade-in">
                 <div class="container">
                     <div class="row">
                         <h1 class="sectionHeader">Nasze realizacje</h1>
@@ -136,34 +136,41 @@
                     <div class="splide">
                         <div class="splide__track">
                             <ul class="splide__list">
-                                <li class="splide__slide"><img src="./images/first.jpg" alt=""
+                                <li class="splide__slide"><img id="img-1" src="./images/first.jpg" alt=""
                                         class="img-fluid splide__img">
                                 </li>
-                                <li class="splide__slide"><img src="./images/second.jpg" alt=""
+                                <li class="splide__slide"><img id="img-2" src="./images/second.jpg" alt=""
                                         class="img-fluid splide__img">
                                 </li>
-                                <li class="splide__slide"><img src="./images/third.jpg" alt=""
+                                <li class="splide__slide"><img id="img-3" src="./images/third.jpg" alt=""
                                         class="img-fluid splide__img">
                                 </li>
-                                <li class="splide__slide"><img src="./images/fourth.jpg" alt=""
+                                <li class="splide__slide"><img id="img-4" src="./images/fourth.jpg" alt=""
                                         class="img-fluid splide__img">
                                 </li>
-                                <li class="splide__slide"><img src="./images/fifth.jpg" alt=""
+                                <li class="splide__slide"><img id="img-5" src="./images/fifth.jpg" alt=""
                                         class="img-fluid splide__img">
                                 </li>
-                                <li class="splide__slide"><img src="./images/sixth.jpg" alt=""
+                                <li class="splide__slide"><img id="img-6" src="./images/sixth.jpg" alt=""
                                         class="img-fluid splide__img">
                                 </li>
+
                             </ul>
                         </div>
                     </div>
+                </div>
+
+                <div class="gallery">
+                    <span class="gallery__close">&times;</span>
+                    <img class="gallery__content">
+                    <div id="gallery__caption"></div>
                 </div>
 
                 <section class="references fade-in">
                     <div class="container">
                         <div class="row">
                             <h1 class="references__header">
-                                <span class="references__btn active-underline">
+                                <span class="references__btn underline">
                                     Referencje <i class="fa fa-chevron-down references__arrow" aria-hidden="true"></i>
                                 </span>
                             </h1>
@@ -187,7 +194,7 @@
                     </div>
                 </section>
             </section>
-            <section id="company-link-section" class="fade-in">
+            <section id="company-link-section" class="scrollToSection company-link fade-in">
                 <div class="container">
                     <div class="row">
                         <h1 class="sectionHeader">O firmie</h1>
@@ -226,7 +233,7 @@
 
 
 
-            <section id="contact-link-section">
+            <section id="contact-link-section" class="scrollToSection contact-link fade-in">
                 <div class="container">
                     <div class="row">
                         <h1 class="sectionHeader">Kontakt</h1>
@@ -245,6 +252,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <script src="./scripts/splide.js"></script>
+    <script src="./scripts/gallery.js"></script>
     <script src="./scripts/references.js"></script>
     <script src="./scripts/scroll.js"></script>
     <script src="./scripts/fadeElements.js"></script>
