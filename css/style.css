@@ -11331,8 +11331,8 @@ fieldset:disabled .btn {
 }
 
 body {
-  background-color: #383f45;
-  color: #f8f9fa;
+  background-color: #1a2127;
+  color: #cfd9e1;
   font-size: 1.2rem;
 }
 
@@ -11342,7 +11342,7 @@ section {
 }
 
 footer {
-  background-color: #212529;
+  background-color: #12171b;
   min-height: 30vh;
 }
 
@@ -11390,7 +11390,11 @@ footer {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font-size: 3.5rem;
-  color: #a7a7a7;
+  color: #cfd9e1;
+}
+
+.heroImage__arrow:hover {
+  color: #afc0ce;
 }
 
 .heroImage__header::after {
@@ -11439,22 +11443,27 @@ footer {
 }
 
 .navbar-custom-scroll {
-  background-color: #212529;
+  background-color: #12171b;
   max-height: 11vh;
   padding-top: .25vh;
   padding-bottom: .25vh;
   font-size: 1.2rem;
-  -webkit-box-shadow: 0px 2px 10px #0a0c0d;
-          box-shadow: 0px 2px 10px #0a0c0d;
+  -webkit-box-shadow: 0px 2px 10px black;
+          box-shadow: 0px 2px 10px black;
 }
 
 .navbar-custom-scroll__logo {
   max-height: 10vh;
 }
 
-.nav-item {
+.nav-link {
   margin-left: 20px;
   position: relative;
+  color: #cfd9e1;
+}
+
+.nav-link:hover {
+  color: #afc0ce;
 }
 
 .active-custom {
@@ -11570,7 +11579,7 @@ footer {
 /* Add Animation - Zoom in the Modal */
 /* The Close Button */
 .references {
-  color: #fff;
+  color: #cfd9e1;
   border: none;
 }
 
@@ -11580,7 +11589,7 @@ footer {
 }
 
 .references__btn:hover {
-  color: #cccccc;
+  color: #afc0ce;
 }
 
 .references__content {
@@ -11615,6 +11624,16 @@ footer {
 
 .references__img {
   overflow: hidden;
+}
+
+.btn {
+  margin-top: 10px;
+  border: 2px solid;
+  border-image-slice: 2;
+  border-image-source: linear-gradient(to left, #398be6, #2fd36f);
+  width: 100px;
+  height: 40px;
+  color: white;
 }
 
 .underline {

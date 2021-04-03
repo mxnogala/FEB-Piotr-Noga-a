@@ -1,23 +1,24 @@
 .fade-in {
     opacity: 0;
     transition: opacity 1s ease-in-out;
-}
 
-.fade-in.appear {
-    opacity: 1; 
-}
+    &.appear {
+        opacity: 1; 
+    }
 
-.fade-in-arrow {
-    opacity: 0; 
-    transition: opacity .6s ease-in-out;
-    display:none;
-    pointer-events: none;
+    &-arrow {
+        opacity: 0; 
+        transition: opacity .6s ease-in-out;
+        display:none;
+        pointer-events: none;
+    
+    }
 
-}
-
-.fade-in-arrow.appear {
-    opacity:1;
-    display:block;
-    cursor: pointer;
-    pointer-events: all;
+    &-arrow.appear {
+        opacity:1;
+        display:block;
+        cursor: pointer;
+        pointer-events: all;
+    }
+    
 }

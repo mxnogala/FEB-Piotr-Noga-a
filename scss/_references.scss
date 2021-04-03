@@ -1,12 +1,12 @@
 .references {
-    color: $white;
+    color: $light;
     border: none;
     
     &__btn {
         position: relative;
         cursor:pointer;
         &:hover {
-            color: darken($white, 20%);
+            color: $basic;
             }
     }
     

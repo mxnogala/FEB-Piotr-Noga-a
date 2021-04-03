@@ -19,7 +19,7 @@
 
 <body>
     <div class="heroImage">
-        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <nav class="navbar navbar-expand-lg navbar-custom">
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="./assets/logo-white-text.png" alt=""
                         class="img-fluid navbar-custom__logo"></a>
@@ -266,6 +266,19 @@
                     <div class="row">
                         <h1 class="sectionHeader">Kontakt</h1>
                     </div>
+                    <form class=contact__form method="post" action="./scripts/mail.php">
+                        <div class="contact-email">
+                            <label for="email-input" class="form-label contact__email-label">E-mail:</label>
+                            <input type="email" class="form-control contact__email-input" id="email-input"
+                                placeholder="Wpisz swój adres e-mail" name="email">
+                        </div>
+                        <div class="contact__text">
+                            <label for="text-input" class="form-label contact__text-label">Treść pytania:</label>
+                            <textarea class="form-control contact__text-input" id="text-input" rows="3"
+                                placeholder="Wpisz treść swojego pytania" name="text"></textarea>
+                        </div>
+                        <button type="submit" class="btn">Primary</button>
+                    </form>
                 </div>
             </section>
         </main>

@@ -1,0 +1,15 @@
+.contact {
+    &__form {
+    }
+}
+
+.btn {
+
+    margin-top: 10px;
+    border: 2px solid;
+    border-image-slice: 2;
+    border-image-source: $gradient;
+    width: 100px;
+    height: 40px;
+    color: white;
+}

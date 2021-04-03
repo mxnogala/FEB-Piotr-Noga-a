@@ -31,9 +31,14 @@
     }
   }
   
-  .nav-item {
+  .nav-link {
     margin-left: 20px;
     position: relative;
+    color: $light;
+
+    &:hover {
+      color: $basic;
+    }
   }
   
   .active-custom {

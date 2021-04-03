@@ -30,25 +30,28 @@
     background-color: $black; 
     background-color: rgba(0,0,0,0.9); 
     z-index: 6; 
+
+    &__content {
+        display: block;
+        position: absolute;
+        width: 70%;
+        top: 50%;  
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      &__close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+      transition: 0.3s;
+  }
   }
   
-.gallery__content {
-    display: block;
-    position: absolute;
-    width: 70%;
-    top: 50%;  
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .gallery__close {
-      position: absolute;
-      top: 15px;
-      right: 35px;
-      color: #f1f1f1;
-      font-size: 40px;
-      font-weight: bold;
-    transition: 0.3s;
-}
+
 
 //   .gallery__close:hover,
 //   .gallery__close:focus {

@@ -1,7 +1,8 @@
 $green: #2fd36f;
 $blue: #398be6;
-$red: #ff0b0b;
-$gray: #a7a7a7;
-$bodyBg: lighten($dark, 10%); 
-$sectionBg: lighten($bodyBg, 10%);
 $gradient: linear-gradient(to left, $blue, $green);
+$dark: #12171b;
+$bodyBg: lighten($dark, 4%);
+$basic:#afc0ce;
+$hover: darken($basic, 10%);
+$light: lighten($basic, 10%);

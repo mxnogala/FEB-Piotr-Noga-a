@@ -7,50 +7,8 @@
 @import "../scss/list"; 
 @import "../scss/gallery";
 @import "../scss/references";
+@import "../scss/contact";
+@import "../scss/underline";
 
 
 
-
-.underline {
-  margin-left: 10px;
-  margin-right: 10px;
-  transform: translateZ(0);
-  position: relative;
-  &:before {
-    overflow:hidden;
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 100%;
-    bottom: -1px;
-    background: $gradient;
-    height: 1px;
-    transition-property: right;
-    transition: right 0.2s ease-out;
-  }
-  &:hover:before {
-    right: 0;
-  }
-
-}
-
-.active-underline {
-  position: relative;
-  margin-left: 10px;
-  margin-right: 10px;
-  transform: translateZ(0);
- 
-    &:after {
-      position: absolute;
-      height: 1px;
-      content: '';
-      left: 0;
-      right: 0;
-      width: 100%;
-      background: $gradient;
-      left: 0;
-      bottom: -1px; 
-  }
-
-  
-}

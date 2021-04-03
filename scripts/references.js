@@ -8,6 +8,6 @@ referencesBtn.addEventListener('click', () => {
 
     referencesContent.classList.toggle('references__content-active');
     referencesBtn.classList.toggle('underline');
-    referencesBtn.classList.toggle('active-underline');
+    referencesHeader.classList.toggle('active-underline');
     arrow.classList.toggle('references__arrow-up');
 })
