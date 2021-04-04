@@ -6,8 +6,8 @@ const isLinkActive = (links, link) => {
     links.forEach(l => {
         if (l.id != link.id) {
             if (l.classList.contains('active-underline')) {
-                l.classList.remove('active-underline');
                 l.classList.add('underline');
+                l.classList.remove('active-underline');
             }
         }
     })
@@ -71,7 +71,6 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
     links.forEach(link => {
-        // isClick = false;
 
         link.addEventListener('click', (e) => {
             const section = document.querySelector(`#${link.id}-section`);
@@ -99,11 +98,10 @@ const activeWhileScrolling = (e) => {
     let navs = document.querySelectorAll(".nav-link");
     const links = [...document.querySelectorAll('.nav-link')];
     const heroImage = document.querySelector("#about-link-section");
-    console.log(getOffset(heroImage));
-    console.log(window.pageYOffset);
     if (pageYOffset < getOffset(heroImage)) {
         links.forEach(link => {
             link.classList.remove('active-underline');
+            link.classList.add('underline');
         })
     }
 

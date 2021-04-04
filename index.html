@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&family=PT+Sans+Narrow&display=swap"
+        rel="stylesheet">
     <style>
 
     </style>
@@ -20,10 +26,10 @@
 <body>
     <div class="heroImage">
         <nav class="navbar navbar-expand-lg navbar-custom">
-            <div class="container">
+            <div class="container-fluid navbar-container">
                 <a class="navbar-brand" href="#"><img src="./assets/logo-white-text.png" alt=""
                         class="img-fluid navbar-custom__logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -53,20 +59,22 @@
                     <div class="row">
                         <h1 class="sectionHeader">O firmie</h1>
                     </div>
-                    <p class="text">Jesteśmy firmą rodzinną z wieloletnim doświadczeniem, specjalizującą się w
-                        wykonywaniu
-                        szeroko
-                        pojętych instalacji elektrycznych.
-                    </p>
-                    <p class="text">
-                        Dysponując wykwalifikowaną kadrą elektromonterów, a także profesjonalnym sprzętem i
-                        renomowanymi
-                        materiałami - gwarantujemy wykonawstwo robót na wysokim poziomie.
-                    </p>
-                    <p class="text">
-                        Jeśli oczekujecie Państwo solidnej, ekonomicznej i funkcjonalnej instalacji elektrycznej
-                        zapraszamy do współpracy i do zapoznania się z naszą ofertą.
-                    </p>
+                    <div class="row">
+                        <p class="text">Jesteśmy firmą rodzinną z wieloletnim doświadczeniem, specjalizującą się w
+                            wykonywaniu
+                            szeroko
+                            pojętych instalacji elektrycznych.
+                        </p>
+                        <p class="text">
+                            Dysponując wykwalifikowaną kadrą elektromonterów, a także profesjonalnym sprzętem i
+                            renomowanymi
+                            materiałami - gwarantujemy wykonawstwo robót na wysokim poziomie.
+                        </p>
+                        <p class="text">
+                            Jeśli oczekujecie Państwo solidnej, ekonomicznej i funkcjonalnej instalacji elektrycznej
+                            zapraszamy do współpracy i do zapoznania się z naszą ofertą.
+                        </p>
+                    </div>
                 </div>
             </section>
 
@@ -75,7 +83,7 @@
                     <div class="row">
                         <h1 class="sectionHeader">Oferta</h1>
                     </div>
-                    <div class="row display-flex align-items-baseline">
+                    <div class="row">
                         <div class="col-xs-12 col-lg-6">
                             <h2 class="offer__header">Instalacje elektryczne</h2>
                             <hr>
@@ -121,7 +129,6 @@
                             <h2 class="offer__header">Projektowanie i kosztorysowanie robót elektrycznych</h2>
                             <hr>
                         </div>
-
                     </div>
                 </div>
             </section>
@@ -166,100 +173,100 @@
                     <div id="gallery__caption"></div>
                 </div>
 
-                <section class="references fade-in">
-                    <div class="container">
+                <!-- <section class="references fade-in"> -->
+                <div class="container">
+                    <div class="row">
+                        <h1 class="sectionHeader-references references__btn underline-references">
+                            Referencje <i class="fa fa-chevron-down references__arrow" aria-hidden="true"></i>
+                        </h1>
+                    </div>
+                    <div class="references__content">
                         <div class="row">
-                            <h1 class="references__header">
-                                <span class="references__btn underline">
-                                    Referencje <i class="fa fa-chevron-down references__arrow" aria-hidden="true"></i>
-                                </span>
-                            </h1>
-                        </div>
-                        <div class="references__content">
-                            <div class="row d-flex justify-content-around">
-                                <div class="col-3">
-                                    <div class="references__img">
-                                        <img src="./assets/ref_01.jpeg" alt=""
-                                            class="img-fluid splide__img references__img">
-                                    </div>
+                            <div class="col-3">
+                                <div class="references__img">
+                                    <img src="./assets/ref_01.jpeg" alt=""
+                                        class="img-fluid splide__img references__img">
                                 </div>
-                                <div class="col-3">
-                                    <div class="references__img">
-                                        <img src="./assets/ref_02.jpg" alt=""
-                                            class="img-fluid splide__img references__img">
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="references__img">
-                                        <img src="./assets/ref_03.jpg" alt=""
-                                            class="img-fluid splide__img references__img">
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="references__img">
-                                        <img src="./assets/ref_04.jpg" alt=""
-                                            class="img-fluid splide__img references__img">
-
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="references__img">
-                                        <img src="./assets/ref_05.jpg" alt=""
-                                            class="img-fluid splide__img references__img">
-
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="references__img">
-                                        <img src="./assets/ref_06.jpg" alt=""
-                                            class="img-fluid splide__img references__img">
-
-                                    </div>
-                                </div>
-
                             </div>
+                            <div class="col-3">
+                                <div class="references__img">
+                                    <img src="./assets/ref_02.jpg" alt="" class="img-fluid splide__img references__img">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="references__img">
+                                    <img src="./assets/ref_03.jpg" alt="" class="img-fluid splide__img references__img">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="references__img">
+                                    <img src="./assets/ref_04.jpg" alt="" class="img-fluid splide__img references__img">
+
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="references__img">
+                                    <img src="./assets/ref_05.jpg" alt="" class="img-fluid splide__img references__img">
+
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="references__img">
+                                    <img src="./assets/ref_06.jpg" alt="" class="img-fluid splide__img references__img">
+
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-                </section>
+                </div>
+                <!-- </section> -->
             </section>
             <section id="company-link-section" class="scrollToSection company-link fade-in">
                 <div class="container">
                     <div class="row">
                         <h1 class="sectionHeader">O firmie</h1>
                     </div>
-                    <p class="text">W branży elektrycznej działamy od 1990 roku (do 2018 pod nazwą „FEB Jan Nogała”), a
-                        obecnie pod
-                        nazwą „FEB Piotr Nogała”. W tym czasie przeprowadziliśmy wiele inwestycji polegających na
-                        montażu kompleksowych instalacji elektrycznych, modernizacji instalacji istniejących, wykonaniu
-                        pomiarów ochronnych, itp.
-                        Naszymi Klientami są zarówno firmy, instytucje jak i odbiorcy indywidualni. Wykonujemy
-                        realizacje w budynkach użyteczności publicznej (banki, szkoły, biurowce, obiekty sportowe), a
-                        także w budownictwie mieszkaniowym jedno i wielorodzinnym. Działamy na terenie całego kraju,
-                        głównie w Warszawie i okolicach.
-                    </p>
-                    <p class="text">
-                        W ostatnim okresie ściśle współpracujemy z Administratorami Nieruchomości -wykonując na ich
-                        zlecenie remonty i rozbudowy instalacji w budynkach Wspólnot Mieszkaniowych na terenie Warszawy
-                        i okolicznych miejscowości.
-                    </p>
-                    <p class="text">
-                        Posiadając wieloletnie doświadczenie w realizacji kompleksowych robót elektrycznych i prac
-                        wykończeniowych, dysponując wykwalifikowaną załogą elektromonterów, a także profesjonalnym
-                        sprzętem oraz renomowanymi materiałami produkcyjnymi – gwarantujemy Państwu sprawne, szybkie i
-                        odznaczające się wysoką jakością wykonanie oferowanych powyżej robót.
-                    </p>
-                    Prace zlecone wykonujemy zgodnie z obowiązującymi normami i przepisami, a także projektem
-                    technicznym.
-                    Wykazując elastyczność i kreatywność w działaniu staramy się dopasować do wysokich wymagań naszych
-                    Klientów.
-                    Stosujemy konkurencyjne ceny i jesteśmy gotowi do negocjacji warunków współpracy.
-                    </p>
-                    <p>Właściciel Firmy - Piotr Nogała</p>
+                    <div class="row">
+                        <p class="text">W branży elektrycznej działamy od 1990 roku (do 2018 pod nazwą „FEB Jan
+                            Nogała”), a
+                            obecnie pod
+                            nazwą „FEB Piotr Nogała”. W tym czasie przeprowadziliśmy wiele inwestycji polegających na
+                            montażu kompleksowych instalacji elektrycznych, modernizacji instalacji istniejących,
+                            wykonaniu
+                            pomiarów ochronnych, itp.
+                            Naszymi Klientami są zarówno firmy, instytucje jak i odbiorcy indywidualni. Wykonujemy
+                            realizacje w budynkach użyteczności publicznej (banki, szkoły, biurowce, obiekty sportowe),
+                            a
+                            także w budownictwie mieszkaniowym jedno i wielorodzinnym. Działamy na terenie całego kraju,
+                            głównie w Warszawie i okolicach.
+                        </p>
+                        <p class="text">
+                            W ostatnim okresie ściśle współpracujemy z Administratorami Nieruchomości -wykonując na ich
+                            zlecenie remonty i rozbudowy instalacji w budynkach Wspólnot Mieszkaniowych na terenie
+                            Warszawy
+                            i okolicznych miejscowości.
+                        </p>
+                        <p class="text">
+                            Posiadając wieloletnie doświadczenie w realizacji kompleksowych robót elektrycznych i prac
+                            wykończeniowych, dysponując wykwalifikowaną załogą elektromonterów, a także profesjonalnym
+                            sprzętem oraz renomowanymi materiałami produkcyjnymi – gwarantujemy Państwu sprawne, szybkie
+                            i
+                            odznaczające się wysoką jakością wykonanie oferowanych powyżej robót.
+                        </p>
+                        <p class="test">
+                            Prace zlecone wykonujemy zgodnie z obowiązującymi normami i przepisami, a także projektem
+                            technicznym.
+                            Wykazując elastyczność i kreatywność w działaniu staramy się dopasować do wysokich wymagań
+                            naszych
+                            Klientów.
+                            Stosujemy konkurencyjne ceny i jesteśmy gotowi do negocjacji warunków współpracy.
+                        </p>
+                        <p>Właściciel Firmy - Piotr Nogała</p>
+                    </div>
 
                 </div>
             </section>
-
-
 
             <section id="contact-link-section" class="scrollToSection contact-link fade-in">
                 <div class="container">
@@ -277,7 +284,7 @@
                             <textarea class="form-control contact__text-input" id="text-input" rows="3"
                                 placeholder="Wpisz treść swojego pytania" name="text"></textarea>
                         </div>
-                        <button type="submit" class="btn">Primary</button>
+                        <button type="submit" class="btn">Wyślij</button>
                     </form>
                 </div>
             </section>
@@ -297,6 +304,7 @@
     <script src="./scripts/gallery.js"></script>
     <script src="./scripts/references.js"></script>
     <script src="./scripts/scroll.js"></script>
+    <script src="./scripts/collapse.js"></script>
     <script src="./scripts/fadeElements.js"></script>
     <script src="./scripts/menu.js"></script>
     <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>

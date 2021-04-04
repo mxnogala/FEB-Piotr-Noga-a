@@ -19,6 +19,27 @@
     &:hover:before {
       right: 0;
     }
+
+    &-references {
+      margin-left: 0;
+      margin-right: 0;
+
+      &:before {
+        overflow:hidden;
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 100%;
+        bottom: -1px;
+        background: $gradient;
+        height: 1px;
+        transition-property: right;
+        transition: right 0.2s ease-out;
+      }
+      &:hover:before {
+        right: 0;
+      }
+    }
   
   }
   
@@ -27,7 +48,6 @@
     margin-left: 10px;
     margin-right: 10px;
     transform: translateZ(0);
-   
       &:after {
         position: absolute;
         height: 1px;

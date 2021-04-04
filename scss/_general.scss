@@ -2,6 +2,9 @@ body {
     background-color: $bodyBg;
     color: $light;
     font-size: 1.2rem;
+    // font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Dosis', sans-serif;
+// font-family: 'PT Sans Narrow', sans-serif;
 }
 
 section {
@@ -21,7 +24,11 @@ footer {
     border-bottom: 1px solid;
     border-image-slice: 1;
     border-image-source: $gradient;
-    margin: 15px;
+    font-weight: 400;
+
+    &-references {
+        border-color: transparent;
+    }
   }
   
   
