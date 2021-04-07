@@ -1,8 +1,5 @@
 <?php
 
-//     echo<<<TEST
-//     <div><h1>$_POST[text]</h1></div>
-// TEST;
 $to = "piotr.nogala@interia.pl";
 $from = $_POST['email'];
 $subject = "Website E-mail";

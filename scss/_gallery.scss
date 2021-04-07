@@ -10,12 +10,19 @@
     
     
 
-    &:hover {
+    &-scale:hover {
         opacity: 0.9;
         transform: scale(1.2);
         cursor: pointer;
         }
+        &-darken:hover {
+            opacity: 0.9;
+            cursor: pointer;
+        }
     }
+
+
+
 
 }
 
@@ -34,7 +41,8 @@
     &__content {
         display: block;
         position: absolute;
-        width: 70%;
+        max-width: 90%;
+        max-height: 90%;
         top: 50%;  
         left: 50%;
         transform: translate(-50%, -50%);
@@ -42,61 +50,15 @@
 
       &__close {
         position: absolute;
-        top: 15px;
-        right: 35px;
+        top: 1px;
+        right: 15px;
         color: #f1f1f1;
         font-size: 40px;
         font-weight: bold;
-      transition: 0.3s;
+        transition: 0.3s;
+        cursor: pointer;
+        border: solid black 1px;
   }
   }
   
 
-
-//   .gallery__close:hover,
-//   .gallery__close:focus {
-//     color: #bbb;
-//     text-decoration: none;
-//     cursor: pointer;
-// }
-
-/* 100% Image Width on Smaller Screens */
-// @media only screen and (max-width: 700px){
-//     .modal-content {
-//         width: 100%;
-//     }
-// }
-
-//   .gallery__caption {
-//     margin: auto;
-//     display: block;
-//     width: 80%;
-//     max-width: 700px;
-//     text-align: center;
-//     color: #ccc;
-//     padding: 10px 0;
-//     height: 150px;
-//   }
-
-/* Add Animation - Zoom in the Modal */
-//   .gallery__content {
-//     animation-name: zoom;
-//     animation-duration: 0.6s;
-//   }
-
-//   @keyframes zoom {
-//     from {transform:scale(0);
-//         position: absolute;
-//         width: 70%;
-//         top: 50%;  
-//         left: 50%;
-//         transform: translate(-50%, -50%);}
-//     to {transform:scale(1);
-//         position: absolute;
-//         width: 70%;
-//         top: 50%;  
-//         left: 50%;
-//         transform: translate(-50%, -50%);}
-//   }
-
-/* The Close Button */

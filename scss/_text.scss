@@ -1,0 +1,21 @@
+.text {
+    &__contact {
+
+        font-size: 1.5rem;
+        color: $basic;
+    }
+
+    &__phone {
+        margin: 10px 0;;
+    }
+
+    &__email {
+        margin-bottom: 20px;
+    }
+
+    &-signature {
+        font-style: italic;
+        color: $basic;
+        margin-top: 30px;
+    }
+}

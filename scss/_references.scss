@@ -1,7 +1,11 @@
 .references {
-    color: $light;
-    
+
     &__btn {
+        font-size: 2rem;
+    font-weight: 500;
+    // margin-bottom: 40px;
+    text-transform: uppercase;
+        margin-top: 30px;
         position: relative;
         cursor:pointer;
         &:hover {
@@ -12,15 +16,15 @@
 
     &__content {
         overflow: hidden; 
-        transition: max-height 0.3s ease-out;
+        transition: max-height .5s ease-out;
         height: auto;
         max-height: 0px;
 
         &-active {
             overflow: hidden; 
-            transition: max-height 1s ease-out;
+            transition: max-height .5s ease-out;
             height: auto;
-            max-height: 200vh;
+            max-height: 1000vw;
         }
     }
 
@@ -36,6 +40,7 @@
 
     &__img {
         overflow:hidden;
+        padding: 2px;
 
     }
 

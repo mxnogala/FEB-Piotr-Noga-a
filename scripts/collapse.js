@@ -5,3 +5,4 @@ toggler.addEventListener("click", () => {
     nav.classList.toggle("navbar-custom-active");
 
 });
+

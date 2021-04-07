@@ -3,7 +3,7 @@ const text = ["Instalacje elektryczne", "Instalacje ochrony odgromowej", "Pomiar
 let index = 0;
 let textIndex = 0;
 let time = 0;
-let speed = 80;
+let speed = 40;
 let deleteLetter = false;
 let i = 1;
 
@@ -17,11 +17,11 @@ const addText = (content) => {
 
 const typing = (newTime) => {
     if (textIndex < text.length) {
-        if (text[textIndex].length <= index && deleteLetter === false) { //jeżeli koniec tekstu
+        if (text[textIndex].length <= index && deleteLetter === false) {
             deleteLetter = true;
             window.setTimeout(function () {
                 i = -1;
-                speed = 20;
+                speed = 10;
             }, 2000);
         }
 
@@ -31,7 +31,7 @@ const typing = (newTime) => {
                 textIndex++;
                 i = 1;
                 index = 0;
-                speed = 80;
+                speed = 40;
             }, 200);
 
         }
