@@ -16,9 +16,3 @@ referencesBtn.addEventListener('click', () => {
     arrow.classList.toggle('references__arrow-up');
 })
 
-const readMoreBtn = document.querySelector(".text__read-more");
-const readMoreContent = document.querySelector(".text__content");
-
-readMoreBtn.addEventListener("click", () => {
-    readMoreContent.classList.toggle('text__content-active');
-})

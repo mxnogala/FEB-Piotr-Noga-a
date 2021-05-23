@@ -32,7 +32,6 @@ const scrollTo = (section) => {
 
     window.removeEventListener("scroll", activeWhileScrolling);
     let offset = getOffset(section);
-    console.log(offset);
     window.scroll({
         behavior: 'smooth',
         left: 0,
@@ -41,7 +40,6 @@ const scrollTo = (section) => {
 }
 
 const isFinished = () => {
-    console.log('ok');
     window.addEventListener("scroll", activeWhileScrolling);
 }
 
@@ -59,8 +57,6 @@ const chevronScroll = (e) => {
 
 document.addEventListener("DOMContentLoaded", () => {
 
-
-    const sections = [...document.querySelectorAll("scrollToSection")];
     chevron.classList.add("appear");
 
     window.addEventListener("scroll", activeWhileScrolling);

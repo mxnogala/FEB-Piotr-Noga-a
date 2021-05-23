@@ -20,14 +20,6 @@
     
   }  
   
-  @media (max-width: 992px) {
-    
-    .navbar-custom-active {
-      background-color: $dark;
-    }
-
-    
-  }
   .navbar-custom-scroll {
     background-color: $dark;
     max-height: 11vh;
@@ -35,21 +27,28 @@
     padding-bottom: .25vh;
     font-size: 1.1rem;
     box-shadow: 0px 2px 10px darken($dark, 10%);
-  
+    
     &__logo {
       max-height: 9.8vh;
     }
   }
   
   .nav-link {
-    // margin-left: 20px;
     position: relative;
     color: $light;
-
+    
     &:hover {
       color: $basic;
     }
+    
+  }
+  @media (max-width: 992px) {
+    
+    .navbar-custom-active {
+      background-color: $dark;
+    }
 
+    
   }
   @media (max-width: 1235px) {
   
@@ -71,12 +70,6 @@
 
   }
   
-  // .active-custom {
-  // border-bottom: 2px solid;
-  // border-image-slice: 1;
-  // border-image-source: $gradient;
-  // }
-
   .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(207, 217, 225, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   }
@@ -85,28 +78,3 @@
     padding: 0 7vw;
   }
   
-  // .custom-toggler.navbar-toggler {
-    // border-color: $light;
-    // position: sticky;
-    // right: 0;
-  // } 
-  // .custom-toggler:focus, .custom-toggler:active{
-    // color: $basic;
-    // box-shadow: $basic 1px;
-    // position: sticky;
-    // right: 0;
-
-  // }
-
-  // nav {
-  //   background-color: $dark;
-  // }
-
-  // .navbar-container {
-  //   background-color: $dark;
-  // }
-
-  // .navbar-collapse {
-  //   left: 0;
-  //   width: 100vw;
-  // }

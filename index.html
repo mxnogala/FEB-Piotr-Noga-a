@@ -52,11 +52,6 @@
         </div>
         <a href="#about"><i class="fas fa-chevron-down heroImage__arrow fade-in-arrow"></i></a>
     </div>
-    <div class="container-fluid heroImage__container">
-        <h1 class="heroImage__header"></h1>
-    </div>
-    <a href="#about"><i class="fas fa-chevron-down heroImage__arrow fade-in-arrow"></i></a>
-    </div>
 
     <div class="container-fluid">
         <main>
@@ -108,15 +103,16 @@
                         <h1 class="sectionHeader">Oferta</h1>
                     </div>
 
-                    <div class="row d-flex align-items-center">
-                        <div class="col-12 col-md-4">
+                    <div class="row d-flex align-items-start">
+                        <div class="col-12 col-md-4 order-last order-md-first">
                             <img src="./assets/electrician1.jpg" alt="" class="img-fluid text__img-left">
                         </div>
-                        <div class="col-12 col-md-8">
+                        <div class="col-12 order-first order-lg-last col-md-8">
                             <div class="offer__container">
-                                <h2 class="offer__header">Instalacje elektryczne</h2>
+                                <h2 class="offer__header" id="list-1">Instalacje elektryczne<i
+                                        class="fas fa-chevron-down arrow offer__arrow" id="list-1-arrow"></i></h2>
                                 <hr>
-                                <ul class="offer-list">
+                                <ul class="offer-list" id="list-1-content">
                                     <li class="offer-list__item">Kompleksowe instalacje elektryczne w budownictwie
                                         mieszkaniowym oraz użyteczności
                                         publicznej.</li>
@@ -132,9 +128,10 @@
                                 </ul>
                             </div>
                             <div class="offer__container">
-                                <h2 class="offer__header">Pomiary ochronne</h2>
+                                <h2 class="offer__header" id="list-2">Pomiary ochronne <i
+                                        class="fas fa-chevron-down offer__arrow arrow" id="list-2-arrow"></i></h2>
                                 <hr>
-                                <ul class="offer-list">
+                                <ul class="offer-list" id="list-2-content">
                                     <li class="offer-list__item">
                                         Pomiary elektryczne w
                                         ramach przeglądów 5-letnich.
@@ -148,9 +145,10 @@
                                 </ul>
                             </div>
                             <div class="offer__container">
-                                <h2 class="offer__header">Instalacje ochrony odgromowej</h2>
+                                <h2 class="offer__header" id="list-3">Instalacje ochrony odgromowej <i
+                                        class="fas fa-chevron-down offer__arrow arrow" id="list-3-arrow"></i></h2>
                                 <hr>
-                                <ul class="offer-list">
+                                <ul class="offer-list" id="list-3-content">
                                     <li class="offer-list__item">Instalacje odgromowe obiektów przemysłowych,
                                         mieszkaniowych
                                         oraz użyteczności publicznej.</li>
@@ -175,7 +173,7 @@
                     <div class="row">
                         <div class="col-12 col-lg-6">
                             <div class="offer__container offer__container-accomplished">
-                                <ul class="offer-list">
+                                <ul class="offer__list-active">
                                     <li class="offer-list__item">Kościół pw. Wszystkich Świętych w Warszawie</li>
                                     <li class="offer-list__item">Budynki banków w Warszawie, Białymstoku, Ostrowi Maz.
                                         Makowie Maz. </li>
@@ -188,7 +186,7 @@
                         </div>
                         <div class="col-12 col-lg-6">
                             <div class="offer__container offer__container-accomplished hide-mobile">
-                                <ul class="offer-list">
+                                <ul class="offer__list-active">
                                     <li class="offer-list__item">Urząd Skarbowy w Ostrzeszowie</li>
                                     <li class="offer-list__item">Budynek NZOZ w Ostrzeszowie</li>
                                     <li class="offer-list__item">Budynek biurowy Centrum Biznesu w Ostrzeszowie</li>
@@ -298,7 +296,7 @@
                     </div>
                     <div class="row d-flex align-items-center justify-content-between">
                         <div class="col-12 col-lg-4 order-last order-lg-first">
-                            <img src="./assets/img4.jpg" alt="" class="img-fluid text__img-left">
+                            <img src="./assets/img4.jpg" alt="" class="img-fluid text__img-left hide-mobile ">
                         </div>
                         <div class="col-12 col-lg-8 order-first order-lg-last">
 
@@ -336,7 +334,7 @@
                     </div>
                     <div class="row mt-4 d-flex align-items-center justify-content-around">
                         <div class="col-12 col-lg-8">
-                            <p class="text">
+                            <p class="text hide-mobile">
                                 Posiadając wieloletnie doświadczenie w realizacji kompleksowych robót elektrycznych
                                 i
                                 prac
@@ -347,7 +345,7 @@
                                 i
                                 odznaczające się wysoką jakością wykonanie oferowanych powyżej robót.
                             </p>
-                            <p class="text">
+                            <p class="text hide-mobile">
                                 Prace zlecone wykonujemy zgodnie z obowiązującymi normami i przepisami, a także
                                 projektem
                                 technicznym.
@@ -357,7 +355,7 @@
                                 Klientów.
                                 Stosujemy konkurencyjne ceny i jesteśmy gotowi do negocjacji warunków współpracy.
                             </p>
-                            <p class="text text-signature">Właściciel Firmy - Piotr Nogała</p>
+                            <p class="text text-signature hide-mobile">Właściciel Firmy - Piotr Nogała</p>
 
                         </div>
                         <div class="col-12 col-lg-4">
@@ -374,18 +372,44 @@
                     <div class="row">
                         <h1 class="sectionHeader">Kontakt</h1>
                     </div>
-                    <form class=contact__form method="post" action="./scripts/mail.php">
-                        <div class="contact-email">
-                            <label for="email-input" class="form-label contact__email-label">E-mail:</label>
-                            <input type="email" class="form-control contact__email-input" id="email-input"
-                                placeholder="Wpisz swój adres e-mail" name="email">
+                    <form class=contact__form method="post" action="">
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <div class="contact-name">
+                                    <label for="name-input" class="form-label contact__name-label">Imię i
+                                        nazwisko:</label>
+                                    <input type="text" class="form-control contact__name-input" id="name-input"
+                                        placeholder="Wpisz swoje imie i nazwisko" name="name">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="contact-email">
+                                    <label for="email-input" class="form-label contact__email-label">E-mail:</label>
+                                    <input type="email" class="form-control contact__email-input" id="email-input"
+                                        placeholder="Wpisz swój adres e-mail" name="email">
+                                </div>
+                            </div>
                         </div>
-                        <div class="contact__text">
-                            <label for="text-input" class="form-label contact__text-label">Treść pytania:</label>
-                            <textarea class="form-control contact__text-input" id="text-input" rows="3"
-                                placeholder="Wpisz treść swojego pytania" name="text"></textarea>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="contact-subject mt-4">
+                                    <label for="subject-input" class="form-label contact__subject-label">Temat:</label>
+                                    <input type="text" class="form-control contact__text-input" id="text-input"
+                                        placeholder="Wpisz temat maila" name="subject">
+                                </div>
+                            </div>
                         </div>
-                        <button type="submit" class="btn">Wyślij</button>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="contact__text mt-4">
+                                    <label for="text-input" class="form-label contact__text-label">Treść
+                                        pytania:</label>
+                                    <textarea class="form-control contact__text-input" id="text-input" rows="3"
+                                        placeholder="Wpisz treść swojego pytania" name="text"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn mt-4 contact__btn">Wyślij</button>
                     </form>
                 </div>
             </section>
@@ -439,6 +463,7 @@
     <script src="./scripts/collapse.js"></script>
     <script src="./scripts/fadeElements.js"></script>
     <script src="./scripts/menu.js"></script>
+    <script src="./scripts/mail.js"></script>
     <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
 </body>
 

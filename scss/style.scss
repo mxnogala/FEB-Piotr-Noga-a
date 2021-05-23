@@ -11,3 +11,19 @@
 @import "../scss/navbar";
 @import "../scss/text";
 @import "../scss/footer";
+
+
+.offer-list {
+    overflow: hidden;
+    transition: max-height .3s linear;
+    height: auto;
+    max-height: 0px;
+}
+
+.offer__list-active {
+        padding-bottom: 20px;
+        overflow: hidden; 
+        transition: max-height .3s linear;
+        height: auto;
+        max-height: 1000vw;
+    }
